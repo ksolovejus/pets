@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: verdana;
+}
+
+body{
+    background-image: linear-gradient(to right, rgb(80, 10, 80) , rgb(32, 32, 135));
+}
+
+h1{
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.about{
+    margin: 30px auto;
+    width: 60%;
+}
+
+hr{
+    border: 1px solid rgba(0, 0, 0, 0.144);
+    /* color: black;
+    background: black ; */
+}
+
+.price{
+    font-size: 4em;
+}
+
+button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: yellow;
+    border-radius: 10px;
+    width: 80%;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background: orange;
+}
+
+.container{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid black; */
+}
+
+.container >div{
+    margin: 30px;
+    min-width: 250px;
+}
+
+div.cat{
+    width: 250px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.175);
+    /* border: 3px solid black; */
+    border-radius: 4px;
+    text-align: center;
+}
+div.dog{
+    width: 250px;
+    height: 540px;
+    background: rgba(255, 255, 255, 0.175);
+    /* border: 3px solid black; */
+    border-radius: 4px;
+    text-align: center;
+}
+div.fish{
+    width: 250px;
+    height: 420px;
+    background: rgba(255, 255, 255, 0.175);
+    /* border: 3px solid black; */
+    border-radius: 4px;
+    text-align: center;
+}
+
+@media (max-width: 700px){
+    .container{
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+    }
+    .about{
+        width: 50%;
+    }
+    div.cat{
+        width: 65%;
+    }
+    div.dog{
+        width: 65%;
+    }
+    div.fish{
+        width: 65%;
+    }
+}
